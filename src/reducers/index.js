@@ -2,11 +2,11 @@ import { combineReducers } from 'redux';
 
 const personReducer = () => {
   return [
-    { id: 1, name: 'Jim', Age: 10, Address: '1000 Test St' },
-    { id: 2, name: 'Bob', Age: 20, Address: '2000 Test St' },
-    { id: 3, name: 'Hope', Age: 30, Address: '3000 Test St' },
-    { id: 4, name: 'Ken', Age: 40, Address: '4000 Test St' },
-    { id: 5, name: 'Stacey', Age: 40, Address: '5000 Test St' }
+    { id: 1, name: 'Jim', age: 10, address: '1000 Test St' },
+    { id: 2, name: 'Bob', Age: 20, address: '2000 Test St' },
+    { id: 3, name: 'Hope', age: 30, address: '3000 Test St' },
+    { id: 4, name: 'Ken', age: 40, address: '4000 Test St' },
+    { id: 5, name: 'Stacey', age: 40, address: '5000 Test St' }
   ];
 };
 
