@@ -1,10 +1,12 @@
 import React from 'react';
 import PersonList from './PersonList';
+import PersonDetail from './PersonDetail';
 
 const App = () => {
   return (
-    <div>
+    <div className="row">
       <PersonList />
+      <PersonDetail />
     </div>
   );
 };
