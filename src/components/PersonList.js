@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { selectPerson } from '../actions';
+import { selectPerson, clearPerson } from '../actions';
 
 class PersonList extends Component {
   renderPeople() {
@@ -26,6 +26,12 @@ class PersonList extends Component {
         <div>
           <ul className="list-group">{this.renderPeople()}</ul>
         </div>
+        <button
+          className="btn btn-sm btn-danger"
+          onClick={() => this.props.clearPerson()}
+        >
+          Clear
+        </button>
       </div>
     );
   }
@@ -37,5 +43,5 @@ const mapStateToProps = state => {
 
 export default connect(
   mapStateToProps,
-  { selectPerson }
+  { selectPerson, clearPerson }
 )(PersonList);

@@ -4,3 +4,10 @@ export const selectPerson = person => {
     payload: person
   };
 };
+
+export const clearPerson = () => {
+  return {
+    type: 'CLEAR_PERSON',
+    payload: null
+  };
+};

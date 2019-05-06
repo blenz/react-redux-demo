@@ -14,6 +14,8 @@ const selectedPersonReducer = (selectedPerson = null, action) => {
   switch (action.type) {
     case 'SELECT_PERSON':
       return action.payload;
+    case 'CLEAR_PERSON':
+      return action.payload;
     default:
       return selectedPerson;
   }
