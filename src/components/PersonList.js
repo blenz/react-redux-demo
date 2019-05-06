@@ -21,8 +21,8 @@ class PersonList extends Component {
 
   render() {
     return (
-      <div className="col-4">
-        <div className="text-center">Person List</div>
+      <div className="col-4 text-center">
+        <h3>Person List</h3>
         <div>
           <ul className="list-group">{this.renderPeople()}</ul>
         </div>
